@@ -1,0 +1,37 @@
+.background {
+  background: url("../images/celine-portrait.png")no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  /* padding-bottom: 60px; */
+  min-height: 92vh;
+}
+
+.album-title, .video-title {
+  font-size: 44px;
+  font-family: 'Cardo', serif;
+  padding-bottom: 13px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  /* padding-top: 25px; */
+  height: 0;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video
+,.album
+ {
+  width: 260px;
+  /* padding-top: 10vh; */
+}

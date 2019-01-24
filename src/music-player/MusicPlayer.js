@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './MusicPlayer.css'
 
+import { Col, Row } from 'antd';
+
 class MusicPlayer extends Component {
 
   static propTypes = {
@@ -170,8 +172,7 @@ class MusicPlayer extends Component {
           autoPlay={this.state.play}
           preload="auto"
           ref={ref => { this.audioContainer = ref }}
-          src={activeMusic.url}
-        />
+          src={activeMusic.url}/>
         <div className="info-and-control">
 
           <div className="progress-container"
@@ -181,34 +182,30 @@ class MusicPlayer extends Component {
           </div>
 
           <div className="control-container">
-            <div className="time-and-volume">
-              <div className="left-time">-{this._formatTime(this.state.leftTime)}</div>
-              <div className="volume-container">
-                <div className="volume-icon">
-                  <i className="icon fa fa-volume-up"></i>
+            <Row>
+              <Col span={2}>
+                <div className="time-and-volume">
+                  <div className="left-time">-{this._formatTime(this.state.leftTime)}</div>
                 </div>
-                <div className="volume-wrapper">
-                  <div
-                    className="progress-container"
-                    onClick={this.handleAdjustVolume.bind(this)}
-                    ref={ref => { this.volumeContainer = ref }}
-                  >
-                    <div className="progress" style={{ width: `${this.state.volume * 100}%` }}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </Col>
 
-            <div className="controls">
-              <i className="icon fa fa-step-backward" style={btnStyle} onClick={this.handlePrev.bind(this)}> back</i>
-              <i className={`icon fa fa-${this.state.play ? 'pause' : 'play'}`} style={btnStyle} onClick={this.handleToggle.bind(this)}>play</i>
-              <i className="icon fa fa-step-forward" style={btnStyle} onClick={this.handleNext.bind(this)}></i>
-            </div>
-            <div className="music-info">
-              <h2 className="title">{activeMusic.title}</h2>
-              {/* <h3 className="artist">{this._processArtistName(activeMusic.artist)}</h3> */}
-            </div>
+              <Col span={2}>
+                <div className="controls">
+                  <i className="icon fa fa-step-backward" style={btnStyle} onClick={this.handlePrev.bind(this)}> back</i>
+                  <i className={`icon fa fa-${this.state.play ? 'pause' : 'play'}`} style={btnStyle} onClick={this.handleToggle.bind(this)}>play</i>
+                  <i className="icon fa fa-step-forward" style={btnStyle} onClick={this.handleNext.bind(this)}>forward</i>
+                </div>
+              </Col>
+
+              <Col span={2}>
+                <div className="music-info">
+                  <h2 className="title">{activeMusic.title}</h2>
+                  {/* <h3 className="artist">{this._processArtistName(activeMusic.artist)}</h3> */}
+                </div>
+              </Col>
+            </Row>
           </div>
+
         </div>
       </div>
     )
