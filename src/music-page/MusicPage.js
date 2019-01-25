@@ -5,6 +5,8 @@ import './MusicPage.css';
 import MusicPlayer from '../music-player/MusicPlayer';
 import Events from '../events/Events';
 
+import { Row } from 'antd';
+
 const playlist = [
   {
     url: 'http://res.cloudinary.com/alick/video/upload/v1502689683/Luis_Fonsi_-_Despacito_ft._Daddy_Yankee_uyvqw9.mp3',
@@ -54,20 +56,28 @@ class MusicPage extends Component {
   render() {
     return(
       <div className="music-page-container">
-        <div class="background">
+        <div className="background">
           <Col xs={{ offset: 2, span: 20 }} md={{ offset: 5, span: 10 }} lg={{ offset: 8, span: 7 }}
             // style={{ background: 'purple' }}
           >
 
-            <h2 class="album-title">Young Soldier</h2>
+            <div className="title-container-1">
+              <div className="rectangle"/>
+              <h2 className="album-title">Young Soldier</h2>
+            </div>
+
             <ul>
               {playlist.map(el =>
                 <li style={{listStyleType: 'none'}}>{ el.title }</li>
               )}
             </ul>
 
-            <h2 class="video-title">“No No More”</h2>
-            <div class="video-wrapper">
+            <div className="title-container-2">
+              <div className="rectangle"/>
+              <h2 className="video-title">“No No More”</h2>
+            </div>
+
+            <div className="video-wrapper">
               <iframe id="myVideo" class="music-video" src="https://www.youtube.com/embed/pnojhQrQsOE?rel=0&loop=1;showinfo=0?theme=light&color=white"
                 frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             </div>

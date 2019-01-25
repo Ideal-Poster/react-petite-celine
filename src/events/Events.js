@@ -1,10 +1,19 @@
 import React from "react";
 import './Events.css';
 
+import { Col, Row } from 'antd';
+
 const Events = () => (
   <div style={{border: "10px solid #1C1820"}}>
     <div class="events-section">
-      <h1>hello</h1>
+      <Row>
+        <Col sm={{ offset: 2 }} md={{ offset:0,  span: 6 }}>
+          <h3 class="events-banner">EVENTS</h3>
+        </Col>
+        <Col span={16} style={{ background: 'grey' }}>
+          <p>hello</p>
+        </Col>
+      </Row>
     </div>
   </div>
 );

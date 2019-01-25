@@ -1,8 +1,24 @@
-
-
 .events-section {
   padding: 40px 0px 0px 0px;
   border: 10px solid white;
   background: #1c1820;
   min-height: 100vh;
+}
+
+.events-banner {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 47px;
+  /* font-family: 'Greycliff-Medium'; */
+  height: 100px;
+  padding-top: 40px;
+
+}
+
+
+@media (max-width: 767.98px) {
+  .events-banner {
+    writing-mode: horizontal-tb;
+    height: 100px;
+  }
 }
