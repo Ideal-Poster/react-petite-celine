@@ -3,6 +3,7 @@ import { Col } from 'antd';
 import './MusicPage.css';
 
 import MusicPlayer from '../music-player/MusicPlayer';
+import Events from '../events/Events';
 
 const playlist = [
   {
@@ -54,12 +55,14 @@ class MusicPage extends Component {
     return(
       <div className="music-page-container">
         <div class="background">
-          <Col offset={8} span={8} style={{ background: 'purple' }}>
+          <Col xs={{ offset: 2, span: 20 }} md={{ offset: 5, span: 10 }} lg={{ offset: 8, span: 7 }}
+            // style={{ background: 'purple' }}
+          >
 
             <h2 class="album-title">Young Soldier</h2>
             <ul>
               {playlist.map(el =>
-                <li style={{   listStyleType: 'none'}}>{ el.title }</li>
+                <li style={{listStyleType: 'none'}}>{ el.title }</li>
               )}
             </ul>
 
@@ -70,8 +73,10 @@ class MusicPage extends Component {
             </div>
 
           </Col>
-          {/* <MusicPlayer playlist={playlist} autoplay /> */}
+          {/* <MusicPlayer playlist={playlist} /> */}
         </div>
+
+        <Events/>
 
       </div>
     );

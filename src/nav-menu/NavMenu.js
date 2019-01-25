@@ -3,7 +3,7 @@ import './NavMenu.css';
 import { Col } from 'antd';
 
 const NavMenu = () => (
-  <Col span={8}>
+  <Col offset={1} span={7} id="nav-menu">
     <p id="header">
       Petite<br/>
       Celine

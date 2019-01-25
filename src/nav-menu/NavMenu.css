@@ -41,10 +41,16 @@ ul.menu-buttons > li > *:hover {
 }
 #header {
   margin-top: 23.75vh;
-  /* padding-bottom: 65px; */
   font-family: 'Cardo', serif;
   font-size: 113px;
   line-height: 0.659;
+  letter-spacing: -1px;
+  /* font-weight: 500; */
+}
+
+#header, .album-title, .video-title {
+  font-family: 'Cardo', serif;
+  color: #e0dce0;
 }
 
 @media (max-width: 1199.98px) {

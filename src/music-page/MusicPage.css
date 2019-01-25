@@ -5,21 +5,18 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  /* padding-bottom: 60px; */
   min-height: 92vh;
 }
 
 .album-title, .video-title {
   font-size: 44px;
-  font-family: 'Cardo', serif;
   padding-bottom: 13px;
+  margin-top: 9.2vh;
 }
 
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
-  /* 16:9 */
-  /* padding-top: 25px; */
   height: 0;
 }
 .video-wrapper iframe {
@@ -35,3 +32,4 @@
   width: 260px;
   /* padding-top: 10vh; */
 }
+
