@@ -4,8 +4,7 @@ import './MusicPage.css';
 
 import MusicPlayer from '../music-player/MusicPlayer';
 import Events from '../events/Events';
-
-import { Row } from 'antd';
+import NavMenu from '../nav-menu/NavMenu';
 
 const playlist = [
   {
@@ -57,8 +56,13 @@ class MusicPage extends Component {
     return(
       <div className="music-page-container">
         <div className="background">
-          <Col xs={{ offset: 2, span: 20 }} md={{ offset: 5, span: 10 }} lg={{ offset: 8, span: 7 }}
-            // style={{ background: 'purple' }}
+
+          <Col xs={{ span: 4, offset: 1 }} xl={{ span: 4, offset: 2 }} id="nav-menu">
+            <NavMenu></NavMenu>
+          </Col>
+
+          <Col xs={{ offset: 2, span: 20 }} sm={{ offset: 8, span: 10 }} lg={{ offset: 10, span: 8 }} xl={{ offset: 10, span: 6 }}
+            // style={{background: 'goldenrod'}}
           >
 
             <div className="title-container-1">

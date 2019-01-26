@@ -21,18 +21,11 @@ class ArtPage extends Component {
   render() {
     return (
       <div>
-            {/* <Col span={4}>col-4</Col>
-            <Col span={4}>col-4</Col>
-            <Col span={4}>col-4</Col>
-            <Col span={4}>col-4</Col> */}
-
-
         <Col sm={24} md={16}>
           <div className='background-color'/>
           <Button className="etsy-button" type="primary" size="large">Etsy Store</Button>
           <PhotoSwipeGallery items={items} options={options} thumbnailContent={this.getThumbnailContent}/>
         </Col>
-
       </div>
     )
   }

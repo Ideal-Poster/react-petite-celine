@@ -28,6 +28,10 @@ ul.menu-buttons > li > *:hover {
   color: grey;
 }
 
+.menu-buttons {
+  min-width: 150px;
+}
+
 .nav-rectangle {
   position: relative;
   display: inline-block;
@@ -62,3 +66,4 @@ ul.menu-buttons > li > *:hover {
     font-size: 40px;
   }
 }
+
