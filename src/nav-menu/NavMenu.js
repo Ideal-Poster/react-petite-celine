@@ -2,6 +2,8 @@ import React from 'react';
 import './NavMenu.css';
 import { Col } from 'antd';
 
+import { Menu, Icon } from 'antd';
+
 const NavMenu = () => (
   <Col offset={1} span={7} id="nav-menu">
     <p id="header">

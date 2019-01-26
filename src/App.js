@@ -4,6 +4,7 @@ import { Row } from 'antd';
 
 import MusicPage from './music-page/MusicPage';
 import NavMenu from './nav-menu/NavMenu';
+import ArtPage from './art-page/ArtPage';
 
 class App extends Component {
   render() {
@@ -11,7 +12,8 @@ class App extends Component {
       <div>
         <Row>
           <NavMenu/>
-          <MusicPage/>
+          {/* <MusicPage/> */}
+          <ArtPage/>
         </Row>
       </div>
     );

@@ -1,0 +1,31 @@
+body {
+  /* background: firebrick; */
+}
+.pswp-thumbnail {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  /* background: tomato; */
+  /* width: 350px; */
+}
+.pswp-thumbnail > img {
+  width: 350px;
+  height: 100%;
+  max-width: 100%;
+}
+.background-color {
+  margin-top: -150px;
+  padding-top: 1500px;
+  z-index: -83;
+  display: inline-block;
+  position: fixed;
+  background: #1c1820;
+  min-width: 100vw;
+  min-height: 120vh;
+}
+
+.pswp img {
+  /* max-width: none; */
+  border: 4px solid green;
+
+}
