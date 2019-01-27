@@ -1,9 +1,5 @@
 import React from 'react';
 import './NavMenu.css';
-import { Col } from 'antd';
-
-import { Menu, Icon } from 'antd';
-
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -18,31 +14,31 @@ const NavMenu = () => (
         Celine
       </p>
 
-      <ul class="menu-buttons">
-        <li class="music">
-            <div class="nav-rectangle"></div>
+      <ul className="menu-buttons">
+        <li className="music">
+            <div className="nav-rectangle"></div>
             <a routerLink="/" routerLinkActive="active">Music</a>
         </li>
-        <li class="art">
-          <div class="nav-rectangle"></div>
+        <li className="art">
+          <div className="nav-rectangle"></div>
           <a routerLink="/art" routerLinkActive="active">Art</a>
         </li>
-        <li class="acting">
-          <div class="nav-rectangle"></div>
+        <li className="acting">
+          <div className="nav-rectangle"></div>
           <a routerLink="/acting" routerLinkActive="active">Acting</a>
         </li>
       </ul>
 
       <div style={{ width: '120px' }}>
-        <a href="https://www.instagram.com/petite_celine/" target="_blank">
+        <a href="https://www.instagram.com/petite_celine/" rel="noopener noreferrer" target="_blank">
           <FontAwesomeIcon className="instagram" icon={ faInstagram } />
         </a>
 
-        <a href="https://www.facebook.com/cdutertre.nyc" target="_blank">
+        <a href="https://www.facebook.com/cdutertre.nyc" rel="noopener noreferrer" target="_blank">
           <FontAwesomeIcon className="facebook" icon={ faFacebook}/>
         </a>
 
-        <a href="https://www.youtube.com/user/celineNYCmusic" target="_blank">
+        <a href="https://www.youtube.com/user/celineNYCmusic" rel="noopener noreferrer" target="_blank">
           <FontAwesomeIcon className="youtube" icon={ faYoutube } />
         </a>
       </div>

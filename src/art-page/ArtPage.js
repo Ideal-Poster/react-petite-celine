@@ -3,7 +3,7 @@ import './ArtPage.css';
 
 import 'react-photoswipe/lib/photoswipe.css';
 import {PhotoSwipeGallery} from 'react-photoswipe';
-import { Row, Col, Button } from 'antd';
+import { Col, Button } from 'antd';
 import items from './GalleryApi';
 
 
@@ -14,7 +14,7 @@ let options = {
 class ArtPage extends Component {
   getThumbnailContent = (item) => {
     return (
-      <img src={item.thumbnail} width={120} height={90}/>
+      <img alt="Petite Celine artwork" src={item.thumbnail} width={120} height={90}/>
     );
   }
 

@@ -6,58 +6,20 @@ import MusicPlayer from '../music-player/MusicPlayer';
 import Events from '../events/Events';
 import NavMenu from '../nav-menu/NavMenu';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faSpotify, faGooglePlay, faSoundcloud } from '@fortawesome/free-brands-svg-icons';
+import playlist from './PlaylistAPI';
 
-library.add(faApple, faSpotify, faGooglePlay, faSoundcloud)
+library.add(faApple, faSpotify, faGooglePlay, faSoundcloud);
 
-const playlist = [
-  {
-    url: 'http://res.cloudinary.com/alick/video/upload/v1502689683/Luis_Fonsi_-_Despacito_ft._Daddy_Yankee_uyvqw9.mp3',
-    cover: 'http://res.cloudinary.com/alick/image/upload/v1502689731/Despacito_uvolhp.jpg',
-    title: 'Despacito',
-    artist: [
-      'Luis Fonsi',
-      'Daddy Yankee'
-    ]
-  },
-  {
-    url: 'http://res.cloudinary.com/alick/video/upload/v1502375674/Bedtime_Stories.mp3',
-    cover: 'http://res.cloudinary.com/alick/image/upload/v1502375978/bedtime_stories_bywggz.jpg',
-    title: 'Bedtime Stories',
-    artist: [
-      'Jay Chou'
-    ]
-  },
-  {
-    url: 'http://res.cloudinary.com/alick/video/upload/v1502444212/Actor_ud8ccw.mp3',
-    cover: 'http://res.cloudinary.com/alick/image/upload/v1502444304/actor_umzdur.jpg',
-    title: '演员',
-    artist: [
-      '薛之谦'
-    ]
-  },
-  {
-    url: 'http://res.cloudinary.com/alick/video/upload/v1502444215/Bridge_of_Fate_aaksg1.mp3',
-    cover: 'http://res.cloudinary.com/alick/image/upload/v1502444306/Bridge_of_Fate_o36rem.jpg',
-    title: 'Bridge of Fate',
-    artist: [
-      '王力宏',
-      '谭维维'
-    ]
-  },
-  {
-    url: 'http://res.cloudinary.com/alick/video/upload/v1502444222/Goodbye_byaom5.mp3',
-    cover: 'http://res.cloudinary.com/alick/image/upload/v1502444310/Goodbye_hpubmk.jpg',
-    title: 'Goodbye',
-    artist: [
-      'G.E.M.'
-    ]
-  }
-]
+
+
 
 class MusicPage extends Component {
+  componentDidMount() {
+
+  }
   render() {
     return(
       <div className="music-page-container">
@@ -86,22 +48,30 @@ class MusicPage extends Component {
             </div>
 
             <div className="video-wrapper">
-              <iframe id="myVideo" class="music-video" src="https://www.youtube.com/embed/pnojhQrQsOE?rel=0&loop=1;showinfo=0?theme=light&color=white"
+              <iframe title="musicVideo" id="myVideo" class="music-video" src="https://www.youtube.com/embed/pnojhQrQsOE?rel=0&loop=1;showinfo=0?theme=light&color=white"
                 frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             </div>
             <div style={{width:'330px'}}>
               <p className="purchase">Purchase Here</p>
               <div className="icons">
+              <a href="https://itunes.apple.com/us/album/words/1371314381?i=1371314384" rel="noopener noreferrer" target="_blank">
                 <FontAwesomeIcon className="apple" icon={ faApple } />
+              </a>
+
+              <a href="https://open.spotify.com/album/0xKZdHbA8Ftrrry0V24wyV" rel="noopener noreferrer" target="_blank">
                 <FontAwesomeIcon className="spotify" icon={ faSpotify } />
+              </a>
+
+              <a href="https://play.google.com/store/music/album/Petite_Celine_Young_Soldier?id=Blkqdzvkjjvonb4bfnjz5vvfjd4" rel="noopener noreferrer" target="_blank">
                 <FontAwesomeIcon className="googlePlay" icon={ faGooglePlay } />
+              </a>
+              <a href="https://soundcloud.com/petite-celine/sets/young-soldier" rel="noopener noreferrer" target="_blank">
                 <FontAwesomeIcon className="soundcloud" icon={ faSoundcloud } />
+              </a>
               </div>
             </div>
-
-
           </Col>
-          {/* <MusicPlayer playlist={playlist} /> */}
+          <MusicPlayer playlist={playlist} />
         </div>
 
         <Events/>

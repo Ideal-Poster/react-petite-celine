@@ -2,7 +2,15 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './MusicPlayer.css'
 
+import MusicPage from '../music-player/MusicPlayer';
 import { Col, Row } from 'antd';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faPlay, faForward, faBackward, faPause } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faPlay, faForward, faBackward, faPause)
+
 
 class MusicPlayer extends Component {
 
@@ -33,12 +41,14 @@ class MusicPlayer extends Component {
       volume: 1
     }
     this.modeList = ['loop', 'random', 'repeat']
+
   }
 
   componentDidMount() {
     const audioContainer = this.audioContainer
     audioContainer.addEventListener('timeupdate', this.updateProgress.bind(this))
     audioContainer.addEventListener('ended', this.end.bind(this))
+    // this._playMusic(3);
   }
 
   componentWillUnmount() {
@@ -160,11 +170,19 @@ class MusicPlayer extends Component {
 
   render() {
     const { progressColor, btnColor, playlist } = this.props
-    const { activeMusicIndex, playMode } = this.state
+    const { activeMusicIndex
+      // ,playMode
+    } = this.state
     const activeMusic = playlist[activeMusicIndex]
-    const playModeClass = playMode === 'loop' ? 'refresh' : playMode === 'random' ? 'random' : 'repeat'
+    // const playModeClass = playMode === 'loop' ? 'refresh' : playMode === 'random' ? 'random' : 'repeat'
     const btnStyle = { color: btnColor }
     const progressStyle = { width: `${this.state.progress * 100}%`, backgroundColor: progressColor }
+    let button;
+    if(this.state.play) {
+      button =  <FontAwesomeIcon className="music-control" onClick={this.handleToggle.bind(this)} icon={ faPause } />
+    } else {
+      button = <FontAwesomeIcon className="music-control" onClick={this.handleToggle.bind(this)} icon={ faPlay } />
+    }
 
     return (
       <div className="player-container" style={this.props.style}>
@@ -183,17 +201,18 @@ class MusicPlayer extends Component {
 
           <div className="control-container">
             <Row>
-              <Col span={2}>
-                <div className="time-and-volume">
-                  <div className="left-time">-{this._formatTime(this.state.leftTime)}</div>
+
+              <Col xs={{ span: 2, offset: 1 }} xl={{ offset: 2 }}>
+                <div className="controls">
+                  <FontAwesomeIcon className="music-control" onClick={this.handlePrev.bind(this)} icon={ faBackward } />
+                  { button }
+                  <FontAwesomeIcon className="music-control" onClick={this.handleNext.bind(this)} icon={ faForward } />
                 </div>
               </Col>
 
               <Col span={2}>
-                <div className="controls">
-                  <i className="icon fa fa-step-backward" style={btnStyle} onClick={this.handlePrev.bind(this)}> back</i>
-                  <i className={`icon fa fa-${this.state.play ? 'pause' : 'play'}`} style={btnStyle} onClick={this.handleToggle.bind(this)}>play</i>
-                  <i className="icon fa fa-step-forward" style={btnStyle} onClick={this.handleNext.bind(this)}>forward</i>
+                <div className="time-and-volume">
+                  <div className="left-time">-{this._formatTime(this.state.leftTime)}</div>
                 </div>
               </Col>
 

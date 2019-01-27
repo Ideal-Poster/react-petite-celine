@@ -7,10 +7,11 @@
 }
 .player-container .info-and-control {
   width: 100%;
-  height: 60px;
-  background: palegreen;
+  height: 55px;
+  background: #432e59;
   position: fixed;
   bottom: 0;
+  z-index: 1000;
 }
 /* .music-info {
   position: relative;
@@ -30,17 +31,24 @@
 } */
 .player-container .info-and-control .progress-container {
   width: 100%;
-  height: 3px;
-  background-color: #dadada;
+  height: 2px;
+  /* background-color: #dadada; */
   cursor: pointer;
 }
-/* .player-container .info-and-control .progress-container .progress {
+.player-container .info-and-control .progress-container .progress {
   height: 100%;
-} */
-/* .player-container .info-and-control .control-container {
+}
+.player-container .info-and-control .control-container {
+  /* position: relative; */
+  /* width: 100%; */
+  /* margin-top: 1.3em; */
+  /* justify-content: center; */
+  /* font-size: 14px; */
+}
+
+.music-control {
   position: relative;
-  width: 100%;
-  margin-top: 1.3em;
-  justify-content: center;
-  font-size: 14px;
-} */
+  top: 13px;
+  font-size: 18px;
+  margin-right: 10px;
+}
