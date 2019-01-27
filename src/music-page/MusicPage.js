@@ -6,6 +6,12 @@ import MusicPlayer from '../music-player/MusicPlayer';
 import Events from '../events/Events';
 import NavMenu from '../nav-menu/NavMenu';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faApple, faSpotify, faGooglePlay, faSoundcloud } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faApple, faSpotify, faGooglePlay, faSoundcloud)
+
 const playlist = [
   {
     url: 'http://res.cloudinary.com/alick/video/upload/v1502689683/Luis_Fonsi_-_Despacito_ft._Daddy_Yankee_uyvqw9.mp3',
@@ -61,9 +67,7 @@ class MusicPage extends Component {
             <NavMenu></NavMenu>
           </Col>
 
-          <Col xs={{ offset: 2, span: 20 }} sm={{ offset: 8, span: 10 }} lg={{ offset: 10, span: 8 }} xl={{ offset: 10, span: 6 }}
-            // style={{background: 'goldenrod'}}
-          >
+          <Col xs={{ offset: 2, span: 20 }} sm={{ offset: 8, span: 10 }} lg={{ offset: 10, span: 8 }} xl={{ offset: 10, span: 6 }}>
 
             <div className="title-container-1">
               <div className="rectangle"/>
@@ -85,6 +89,14 @@ class MusicPage extends Component {
               <iframe id="myVideo" class="music-video" src="https://www.youtube.com/embed/pnojhQrQsOE?rel=0&loop=1;showinfo=0?theme=light&color=white"
                 frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             </div>
+              <p className="purchase">Purchase Here</p>
+            <div className="icons">
+              <FontAwesomeIcon className="apple" icon={ faApple } />
+              <FontAwesomeIcon className="spotify" icon={ faSpotify } />
+              <FontAwesomeIcon className="googlePlay" icon={ faGooglePlay } />
+              <FontAwesomeIcon className="soundcloud" icon={ faSoundcloud } />
+            </div>
+
 
           </Col>
           {/* <MusicPlayer playlist={playlist} /> */}

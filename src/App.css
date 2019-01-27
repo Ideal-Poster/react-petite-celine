@@ -5,3 +5,8 @@
 }
 
 
+@media (max-width: 575.98px) {
+  #nav-container{
+    display: none;
+  }
+}

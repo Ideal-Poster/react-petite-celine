@@ -4,9 +4,15 @@ import { Col } from 'antd';
 
 import { Menu, Icon } from 'antd';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faInstagram, faFacebook, faYoutube)
+
 const NavMenu = () => (
   // <Col offset={1} span={7} id="nav-menu">
-    <div>
+    <div id="nav-container">
       <p id="header">
         Petite<br/>
         Celine
@@ -26,8 +32,14 @@ const NavMenu = () => (
           <a routerLink="/acting" routerLinkActive="active">Acting</a>
         </li>
       </ul>
+
+      {/* <FontAwesomeIcon className="back__arrow" icon={ faCoffee } /> */}
+      <FontAwesomeIcon className="instagram" icon={ faInstagram } />
+      <FontAwesomeIcon className="facebook" icon={ faFacebook}/>
+      <FontAwesomeIcon className="youtube" icon={ faYoutube } />
+
     </div>
-  // </Col>
+  // </Col>``
 );
 
 export default NavMenu;

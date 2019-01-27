@@ -1,3 +1,7 @@
+.music-page-container {
+  overflow-x: hidden;
+}
+
 .background {
   background: url("../assets/images/celine-portrait.png")no-repeat 50% 50%;
   background-size: cover;
@@ -5,9 +9,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  min-height: 725px;
+  min-height: 700px;
   height: 92vh;
-
 }
 
 .album-title, .video-title {
@@ -45,11 +48,15 @@
 }
 
 .title-container-1 {
-  margin-top: 9.2vh;
+  margin-top: 5.5vh;
 }
 
 .title-container-2 {
   margin-top: 9.2vh;
+}
+
+.title-container-1, .title-container-2 {
+  min-width: 320px;
 }
 
 .title-container-1, .title-container-2, .album-title, .video-title {
