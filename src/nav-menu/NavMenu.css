@@ -1,5 +1,10 @@
+#nav-container{
+  top: -40px;
+  position: relative;
+}
 ul.menu-buttons {
-  font-size: 44px;
+  position: relative;
+  font-size: 40px;
   line-height: 1.2;
   list-style-type: none;
 }
@@ -47,7 +52,7 @@ ul.menu-buttons > li > *:hover {
   font-size: 113px;
   line-height: 0.659;
   letter-spacing: -1px;
-  /* font-weight: 500; */
+  position: relative;
 }
 
 #header, .album-title, .video-title {
@@ -58,6 +63,8 @@ ul.menu-buttons > li > *:hover {
 @media (max-width: 1199.98px) {
   #header {
     font-size: 94px;
+    top: 0;
+
   }
   ul.menu-buttons {
     font-size: 40px;
@@ -70,15 +77,12 @@ ul.menu-buttons > li > *:hover {
   font-size: 20.5px;
   margin-right: 20px;
   margin-bottom: 100px;
-
-
 }
 
 .purchase{
   display: inline-block;
   color: #a4955c;
   position: relative;
-  top: 0px;
   font-size: 18px;
   top: -100px;
 }

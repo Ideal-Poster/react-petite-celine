@@ -89,12 +89,14 @@ class MusicPage extends Component {
               <iframe id="myVideo" class="music-video" src="https://www.youtube.com/embed/pnojhQrQsOE?rel=0&loop=1;showinfo=0?theme=light&color=white"
                 frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             </div>
+            <div style={{width:'330px'}}>
               <p className="purchase">Purchase Here</p>
-            <div className="icons">
-              <FontAwesomeIcon className="apple" icon={ faApple } />
-              <FontAwesomeIcon className="spotify" icon={ faSpotify } />
-              <FontAwesomeIcon className="googlePlay" icon={ faGooglePlay } />
-              <FontAwesomeIcon className="soundcloud" icon={ faSoundcloud } />
+              <div className="icons">
+                <FontAwesomeIcon className="apple" icon={ faApple } />
+                <FontAwesomeIcon className="spotify" icon={ faSpotify } />
+                <FontAwesomeIcon className="googlePlay" icon={ faGooglePlay } />
+                <FontAwesomeIcon className="soundcloud" icon={ faSoundcloud } />
+              </div>
             </div>
 
 

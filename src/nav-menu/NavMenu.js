@@ -33,13 +33,20 @@ const NavMenu = () => (
         </li>
       </ul>
 
-      {/* <FontAwesomeIcon className="back__arrow" icon={ faCoffee } /> */}
-      <FontAwesomeIcon className="instagram" icon={ faInstagram } />
-      <FontAwesomeIcon className="facebook" icon={ faFacebook}/>
-      <FontAwesomeIcon className="youtube" icon={ faYoutube } />
+      <div style={{ width: '120px' }}>
+        <a href="https://www.instagram.com/petite_celine/" target="_blank">
+          <FontAwesomeIcon className="instagram" icon={ faInstagram } />
+        </a>
 
+        <a href="https://www.facebook.com/cdutertre.nyc" target="_blank">
+          <FontAwesomeIcon className="facebook" icon={ faFacebook}/>
+        </a>
+
+        <a href="https://www.youtube.com/user/celineNYCmusic" target="_blank">
+          <FontAwesomeIcon className="youtube" icon={ faYoutube } />
+        </a>
+      </div>
     </div>
-  // </Col>``
 );
 
 export default NavMenu;
