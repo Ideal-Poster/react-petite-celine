@@ -41,7 +41,6 @@ class MusicPlayer extends Component {
       volume: 1
     }
     this.modeList = ['loop', 'random', 'repeat']
-
   }
 
   componentDidMount() {
