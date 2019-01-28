@@ -29,8 +29,6 @@ class MusicPage extends Component {
           }
         });
         tracks[i].classList.add('active');
-
-
       });
     });
   }

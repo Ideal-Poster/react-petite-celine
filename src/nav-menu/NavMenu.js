@@ -8,7 +8,7 @@ library.add(faInstagram, faFacebook, faYoutube)
 
 const NavMenu = () => (
   // <Col offset={1} span={7} id="nav-menu">
-    <div id="nav-container">
+    <div className="nav-container">
       <p id="header">
         Petite<br/>
         Celine

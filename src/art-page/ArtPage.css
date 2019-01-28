@@ -16,7 +16,6 @@
 div.pswp-thumbnails {
   margin-left: auto;
   margin-right: auto;
-  /* border: 4px solid green; */
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -54,18 +53,26 @@ body {
   }
 } */
 
+@media (max-width: 831px) {
+  .pswp-thumbnail > img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767.98px) {
   .pswp-thumbnail > img {
-    width: 180px;
+    /* width: 180px; */
   }
 }
 @media (max-width: 575.98px) {
   .pswp-thumbnail > img {
     width: 100%;
   }
+
+
   div.pswp-thumbnails {
     padding-left: 0px;
+    padding-right: 0px;
   }
-
 
 }

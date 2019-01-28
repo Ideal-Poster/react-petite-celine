@@ -5,6 +5,7 @@ import 'react-photoswipe/lib/photoswipe.css';
 import {PhotoSwipeGallery} from 'react-photoswipe';
 import { Col, Button } from 'antd';
 import items from './GalleryApi';
+import NavMenu from '../nav-menu/NavMenu';
 
 
 let options = {
@@ -21,7 +22,11 @@ class ArtPage extends Component {
   render() {
     return (
       <div>
-        <Col sm={24} md={16}>
+        <Col xs={{ span: 8, offset: 1 }} xl={{ span: 7, offset: 2 }}>
+          <NavMenu/>
+        </Col>
+
+        <Col xs={24} sm={{span: 15 }}>
           <div className='background-color'/>
           <Button className="etsy-button" type="primary" size="large">Etsy Store</Button>
           <PhotoSwipeGallery items={items} options={options} thumbnailContent={this.getThumbnailContent}/>
