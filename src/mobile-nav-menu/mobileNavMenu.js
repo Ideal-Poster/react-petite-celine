@@ -3,6 +3,9 @@ import { Menu, Icon } from 'antd';
 
 import './mobileNavMenu.css';
 
+import { Link } from 'react-router-dom'
+
+
 const SubMenu = Menu.SubMenu;
 
 class MobileNavMenu extends Component {
@@ -34,10 +37,15 @@ class MobileNavMenu extends Component {
           // style={{  display: 'block' }}
           >
           <SubMenu className="mobile-nav-menu" key="sub1" title={<span><Icon type="down-circle" /><span>Petite Celine</span></span>}>
-            <Menu.Item className="mobile-nav-menu" key="1">Option 1</Menu.Item>
-            <Menu.Item className="mobile-nav-menu" key="2">Option 2</Menu.Item>
-            <Menu.Item className="mobile-nav-menu" key="3">Option 3</Menu.Item>
-            <Menu.Item className="mobile-nav-menu" key="4">Option 4</Menu.Item>
+            <Menu.Item className="mobile-nav-menu" key="1">
+              <Link to="/">Music</Link>
+            </Menu.Item>
+            <Menu.Item className="mobile-nav-menu" key="2">
+              <Link to="/art">Art</Link>
+            </Menu.Item>
+            <Menu.Item className="mobile-nav-menu" key="3">
+              <Link to="/acting">Acting</Link>
+            </Menu.Item>
           </SubMenu>
         </Menu>
       </div>

@@ -8,15 +8,23 @@ import Footer from './footer/footer';
 import MobileNavMenu from './mobile-nav-menu/mobileNavMenu';
 
 
+import { Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 class App extends Component {
 
   render() {
     return (
       <div>
+        {/* <li><Link to='/'>Home</Link></li>
+        <li><Link to='/art'>Roster</Link></li>
+        <li><Link to='/acting'>Schedule</Link></li> */}
         <MobileNavMenu/>
-        {/* <MusicPage/> */}
-        <ArtPage/>
-        {/* <ActingPage/> */}
+        <Switch>
+          <Route exact path='/' component={MusicPage}/>
+          <Route path='/art' component={ArtPage}/>
+          <Route path='/acting' component={ActingPage}/>
+        </Switch>
         <Footer></Footer>
       </div>
     );
