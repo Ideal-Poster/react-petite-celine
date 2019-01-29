@@ -4,6 +4,7 @@ import { Menu, Icon } from 'antd';
 const SubMenu = Menu.SubMenu;
 
 class MobileNavMenu extends Component {
+  display = 'none';
   rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
 
   state = {
@@ -23,11 +24,12 @@ class MobileNavMenu extends Component {
 
   render() {
     return(
-      <div>
+      <div className="mobile-nav-menu">
         <Menu
           mode="inline"
           onOpenChange={this.onOpenChange}
-          style={{ width: '100%' }}>
+          // style={{  display: 'block' }}
+          >
           <SubMenu key="sub1" title={<span><Icon type="down-circle" /><span>Navigation One</span></span>}>
             <Menu.Item key="1">Option 1</Menu.Item>
             <Menu.Item key="2">Option 2</Menu.Item>
