@@ -5,7 +5,7 @@ import MusicPage from './music-page/MusicPage';
 import ArtPage from './art-page/ArtPage';
 import ActingPage from './acting-page/ActingPage';
 import Footer from './footer/footer';
-import MobileNavMenu from './mobile-nav-menu/mobile-nav-menu';
+import MobileNavMenu from './mobile-nav-menu/mobileNavMenu';
 
 
 class App extends Component {

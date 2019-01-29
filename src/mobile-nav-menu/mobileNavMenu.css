@@ -1,0 +1,10 @@
+.ant-menu, .ant-menu-sub, .ant-menu-inline {
+  background: #17141a !important;
+  color: white;
+}
+@media(min-width: 767.5px){
+  .mobile-nav-menu {
+    display: none;
+
+  }
+}

@@ -40,18 +40,6 @@ body {
   margin-top: 80px;
   background: purple;
 }
-/*
-@media (max-width: 1199.98px) {
-  .pswp-thumbnail > img {
-    width: 290px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .pswp-thumbnail > img {
-    width: 210px;
-  }
-} */
 
 @media (max-width: 831px) {
   .pswp-thumbnail > img {
