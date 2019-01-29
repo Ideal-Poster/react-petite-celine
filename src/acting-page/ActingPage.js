@@ -7,10 +7,10 @@ import Footer from '../footer/footer';
 
 const ActingPage = () => (
   <div id="acting-container">
-    <Col xs={{ span: 6, offset: 1 }} xl={{ span: 6, offset: 2 }}>
+    <Col sm={{ span: 6, offset: 1 }} xl={{ span: 6, offset: 2 }}>
       <NavMenu/>
     </Col>
-    <Col sm={{ span: 16 }} xl={{ span: 14 }} style={{ paddingTop: '40px', paddingBottom: '40px' }}>
+    <Col md={{ span: 16 }} xl={{ span: 14 }} style={{ paddingTop: '40px', paddingBottom: '40px' }}>
       <Row>
         <img src={ require("../assets/images/celine-1-mask.png")} alt="Portrait of celine" style={{ width: '100%' }}/>
       </Row>

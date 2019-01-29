@@ -14,8 +14,8 @@ class App extends Component {
     return (
       <div>
         <MobileNavMenu/>
-        <MusicPage/>
-        {/* <ArtPage/> */}
+        {/* <MusicPage/> */}
+        <ArtPage/>
         {/* <ActingPage/> */}
         <Footer></Footer>
       </div>

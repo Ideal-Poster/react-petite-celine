@@ -22,11 +22,11 @@ class ArtPage extends Component {
   render() {
     return (
       <div>
-        <Col xs={{ span: 8, offset: 1 }} xl={{ span: 7, offset: 2 }}>
+        <Col sm={{ span: 8, offset: 1 }} xl={{ span: 7, offset: 2 }}>
           <NavMenu/>
         </Col>
 
-        <Col xs={24} sm={{span: 15 }}>
+        <Col xs={24} md={{span: 15 }}>
           <div className='background-color'/>
           <Button className="etsy-button" type="primary" size="large">Etsy Store</Button>
           <PhotoSwipeGallery items={items} options={options} thumbnailContent={this.getThumbnailContent}/>
