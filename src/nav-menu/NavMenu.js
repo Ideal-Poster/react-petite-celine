@@ -42,6 +42,10 @@ const NavMenu = () => (
           <FontAwesomeIcon className="youtube" icon={ faYoutube } />
         </a>
       </div>
+
+      <a href="mailto:petitecelineworld@gmail.com" className="email">
+        <p>petitecelineworld@gmail.com</p>
+      </a>
     </div>
 );
 

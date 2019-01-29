@@ -1,0 +1,12 @@
+.reel-box {
+  height: 100%;
+  width: 191.5%;
+  background: #71bcc2;
+  position: absolute;
+  display: block;
+  left: -50%;
+}
+.reel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
