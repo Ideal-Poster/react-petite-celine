@@ -14,7 +14,25 @@ import playlist from './PlaylistAPI';
 library.add(faApple, faSpotify, faGooglePlay, faSoundcloud);
 
 class MusicPage extends Component {
-  displayed = false;
+
+
+  constructor(props) {
+    super(props);
+    console.log(props);
+
+    this.state = {
+      showComponent: false
+    };
+    this._onTrackClick = this._onTrackClick.bind(this);
+    console.log(this._onTrackClick);
+
+    }
+
+  _onTrackClick() {
+    this.setState({
+      showComponent: true,
+    });
+  }
 
   componentDidMount() {
     this.init();
@@ -24,15 +42,16 @@ class MusicPage extends Component {
     let tracks = Array.prototype.slice.call( document.getElementsByClassName("track") )
     tracks.forEach((track, i) => {
       track.addEventListener('click', () => {
-        console.log(this.musicPlayer);
-        // document.getElementById(music)
-        // this.musicPlayer._playMusic(i)
-        // tracks.forEach(element => {
-        //   if (element.classList.contains('active')) {
-        //     element.classList.remove('active')
-        //   }
-        // });
-        // tracks[i].classList.add('active');
+        setTimeout(() => {
+
+          this.musicPlayer._playMusic(i)
+        }, 100);
+        tracks.forEach(element => {
+          if (element.classList.contains('active')) {
+            element.classList.remove('active')
+          }
+        });
+        tracks[i].classList.add('active');
       });
     });
   }
@@ -51,7 +70,7 @@ class MusicPage extends Component {
             </div>
             <ul>
               {playlist.map((el, i) =>
-                <li className={`track track-${i}`} key={i} style={{listStyleType: 'none'}}>{ el.title }</li>
+                <li onClick={this._onTrackClick} className={`track track-${i}`} key={i} style={{listStyleType: 'none'}}>{ el.title }</li>
               )}
             </ul>
             <div className="title-container-2">
@@ -81,7 +100,10 @@ class MusicPage extends Component {
             </div>
           </Col>
         </div>
-        <MusicPlayer playlist={playlist} ref={musicPlayer => (this.musicPlayer = musicPlayer)}/>
+        {this.state.showComponent ?
+          <MusicPlayer playlist={playlist} ref={musicPlayer => (this.musicPlayer = musicPlayer)}/> :
+           null
+        }
         <Events/>
       </div>
     );
