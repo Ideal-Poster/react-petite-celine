@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import { Row, Col } from 'antd';
+import { Col } from 'antd';
 
 const Footer = () => (
   <Col span={24}>

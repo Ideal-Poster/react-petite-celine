@@ -14,6 +14,8 @@ import playlist from './PlaylistAPI';
 library.add(faApple, faSpotify, faGooglePlay, faSoundcloud);
 
 class MusicPage extends Component {
+  displayed = false;
+
   componentDidMount() {
     this.init();
   }
@@ -22,13 +24,15 @@ class MusicPage extends Component {
     let tracks = Array.prototype.slice.call( document.getElementsByClassName("track") )
     tracks.forEach((track, i) => {
       track.addEventListener('click', () => {
-        this.musicPlayer._playMusic(i)
-        tracks.forEach(element => {
-          if (element.classList.contains('active')) {
-            element.classList.remove('active')
-          }
-        });
-        tracks[i].classList.add('active');
+        console.log(this.musicPlayer);
+        // document.getElementById(music)
+        // this.musicPlayer._playMusic(i)
+        // tracks.forEach(element => {
+        //   if (element.classList.contains('active')) {
+        //     element.classList.remove('active')
+        //   }
+        // });
+        // tracks[i].classList.add('active');
       });
     });
   }
@@ -55,8 +59,8 @@ class MusicPage extends Component {
               <h2 className="video-title">“No No More”</h2>
             </div>
             <div className="video-wrapper">
-              <iframe title="musicVideo" id="myVideo" class="music-video" src="https://www.youtube.com/embed/pnojhQrQsOE?rel=0&loop=1;showinfo=0?theme=light&color=white"
-                frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+              <iframe title="musicVideo" id="myVideo" className="music-video" src="https://www.youtube.com/embed/pnojhQrQsOE?rel=0&loop=1;showinfo=0?theme=light&color=white"
+                frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen></iframe>
             </div>
             <div style={{width:'330px'}}>
               <p className="purchase">Purchase Here</p>

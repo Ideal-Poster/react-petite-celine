@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './MusicPlayer.css'
 
-import MusicPage from '../music-player/MusicPlayer';
 import { Col, Row } from 'antd';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -168,13 +167,10 @@ class MusicPlayer extends Component {
   }
 
   render() {
-    const { progressColor, btnColor, playlist } = this.props
+    const { progressColor, playlist } = this.props
     const { activeMusicIndex
-      // ,playMode
     } = this.state
     const activeMusic = playlist[activeMusicIndex]
-    // const playModeClass = playMode === 'loop' ? 'refresh' : playMode === 'random' ? 'random' : 'repeat'
-    const btnStyle = { color: btnColor }
     const progressStyle = { width: `${this.state.progress * 100}%`, backgroundColor: progressColor }
     let button;
     if(this.state.play) {
@@ -201,7 +197,7 @@ class MusicPlayer extends Component {
           <div className="control-container">
             <Row>
 
-              <Col xs={{ span: 2, offset: 1 }} xl={{ offset: 2 }}>
+              <Col xs={{ span: 6, offset: 1 }} md={{ span: 4, offset: 1 }} xl={{ offset: 2 }}>
                 <div className="controls">
                   <FontAwesomeIcon className="music-control" onClick={this.handlePrev.bind(this)} icon={ faBackward } />
                   { button }
@@ -209,16 +205,16 @@ class MusicPlayer extends Component {
                 </div>
               </Col>
 
-              <Col span={2}>
-                <div className="time-and-volume">
-                  <div className="left-time">-{this._formatTime(this.state.leftTime)}</div>
-                </div>
-              </Col>
-
-              <Col span={2}>
+              <Col xs={{ span: 6 }} md={4}>
                 <div className="music-info">
                   <h2 className="title">{activeMusic.title}</h2>
                   {/* <h3 className="artist">{this._processArtistName(activeMusic.artist)}</h3> */}
+                </div>
+              </Col>
+
+              <Col xs={{ span: 6 }} md={4}>
+                <div className="time-and-volume">
+                  <div className="left-time">-{this._formatTime(this.state.leftTime)}</div>
                 </div>
               </Col>
             </Row>

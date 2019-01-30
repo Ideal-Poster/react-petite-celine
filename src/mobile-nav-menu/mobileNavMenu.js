@@ -36,7 +36,7 @@ class MobileNavMenu extends Component {
           onOpenChange={this.onOpenChange}
           // style={{  display: 'block' }}
           >
-          <SubMenu className="mobile-nav-menu" key="sub1" title={<span><Icon type="down-circle" /><span>Petite Celine</span></span>}>
+          <SubMenu className="mobile-nav-menu" key="sub1" title={<span><Icon type="appstore" /><span>Petite Celine</span></span>}>
             <Menu.Item className="mobile-nav-menu" key="1">
               <Link to="/">Music</Link>
             </Menu.Item>

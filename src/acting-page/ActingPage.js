@@ -3,7 +3,6 @@ import './ActingPage.css';
 import NavMenu from '../nav-menu/NavMenu';
 
 import { Row, Col } from 'antd';
-import Footer from '../footer/footer';
 
 const ActingPage = () => (
   <div id="acting-container">
@@ -27,8 +26,8 @@ const ActingPage = () => (
       <Row>
         <div className="reel-box"/>
         <div className="video-wrapper reel">
-          <iframe class="" src="https://www.youtube.com/embed/96ayQ3GsfrE?rel=0?theme=light&color=white&mute=1&autoplay=1" frameborder="0" gesture="media"
-            allow="encrypted-media" allowfullscreen></iframe>
+          <iframe title="music-video" src="https://www.youtube.com/embed/96ayQ3GsfrE?rel=0?theme=light&color=white&mute=1&autoplay=1" frameBorder="0" gesture="media"
+            allow="encrypted-media" allowFullScreen></iframe>
         </div>
       </Row>
     </Col>
