@@ -65,3 +65,10 @@
 
 }
 
+.music-color-underlay{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -10000;
+  background: #1c1820;
+}

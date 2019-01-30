@@ -1,3 +1,10 @@
+.art-color-underlay {
+
+  background: #432e59;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
 .pswp-thumbnail {
   display: inline-block;
   margin: 10px;
@@ -23,7 +30,7 @@ div.pswp-thumbnails {
 .background-color {
   margin-top: -150px;
   padding-top: 1500px;
-  z-index: -83;
+  z-index: -10000;
   display: inline-block;
   position: fixed;
   background: #1c1820;
@@ -31,9 +38,6 @@ div.pswp-thumbnails {
   min-height: 120vh;
 }
 
-body {
-  background: #432e59;
-}
 
 .etsy-button {
   margin-left: 50px;

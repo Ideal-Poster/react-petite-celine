@@ -20,7 +20,7 @@ class App extends Component {
           <Route path='/art' component={ArtPage}/>
           <Route path='/acting' component={ActingPage}/>
         </Switch>
-        <Footer></Footer>
+        <Footer style={{zIndex: 1000}}></Footer>
       </div>
     );
   }

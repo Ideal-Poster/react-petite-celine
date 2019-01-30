@@ -6,6 +6,7 @@ import { Row, Col } from 'antd';
 
 const ActingPage = () => (
   <div id="acting-container">
+    <div className="acting-color-underlay"></div>
     <Col sm={{ span: 6, offset: 1 }} xl={{ span: 6, offset: 2 }}>
       <NavMenu/>
     </Col>

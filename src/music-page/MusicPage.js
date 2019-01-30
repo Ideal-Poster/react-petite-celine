@@ -59,6 +59,7 @@ class MusicPage extends Component {
   render() {
     return(
       <div className="music-page-container">
+        <div className="music-color-underlay"></div>
         <div className="background">
           <Col sm={{ span: 4, offset: 1 }} xl={{ span: 4, offset: 2 }} id="nav-menu">
             <NavMenu></NavMenu>

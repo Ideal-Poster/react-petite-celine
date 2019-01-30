@@ -10,3 +10,10 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.acting-color-underlay{
+  width: 100vw;
+  height: 100vh;
+  background: #3e788e;
+  z-index: -10000;
+  position: fixed;
+}
