@@ -4,6 +4,8 @@ import NavMenu from '../nav-menu/NavMenu';
 
 import { Row, Col } from 'antd';
 
+import ImageToggle from './imageToggle/ImageToggle';
+
 class ActingPage extends Component {
   constructor() {
     super();
@@ -13,7 +15,7 @@ class ActingPage extends Component {
     };
   }
 
-  handleMouseHover(thing) {
+  handleMouseHover() {
     this.setState(this.toggleHoverState);
   }
 
@@ -32,31 +34,13 @@ class ActingPage extends Component {
         </Col>
         <Col md={{ span: 16 }} xl={{ span: 14 }} style={{ paddingTop: '40px', paddingBottom: '40px' }}>
           <Row>
-            <div onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
-              {
-                this.state.isHovering?
-                <img src={ require("../assets/images/celine-1-mask.png")} alt="Portrait of celine" style={{ width: '100%' }}/>:
-                <img src={ require("../assets/images/celine-1.png")} alt="Portrait of celine" style={{ width: '100%' }}/>
-              }
-            </div>
+            <ImageToggle maskedImage={require("../assets/images/celine-1-mask.png")} image={require("../assets/images/celine-1.png")}></ImageToggle>
           </Row>
           <Col span={12}>
-            <div onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
-              {
-                this.state.isHovering?
-                <img src={ require("../assets/images/celine-2-mask.png")} alt="Portrait of celine" style={{ width: '100%' }}/>:
-                <img src={ require("../assets/images/celine-2.png")} alt="Portrait of celine" style={{ width: '100%' }}/>
-              }
-            </div>
+            <ImageToggle maskedImage={require("../assets/images/celine-2-mask.png")} image={require("../assets/images/celine-2.png")}></ImageToggle>
           </Col>
           <Col span={12}>
-            <div onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
-              {
-                this.state.isHovering?
-                <img src={ require("../assets/images/celine-3-mask.png")} alt="Portrait of celine" style={{ width: '100%' }}/>:
-                <img src={ require("../assets/images/celine-3.png")} alt="Portrait of celine" style={{ width: '100%' }}/>
-              }
-            </div>
+            <ImageToggle maskedImage={require("../assets/images/celine-3-mask.png")} image={require("../assets/images/celine-3.png")}></ImageToggle>
           </Col>
         </Col>
         <Col span={12} offset={6}>
