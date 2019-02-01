@@ -2,19 +2,12 @@ import React, { Component } from 'react';
 import './ArtPage.css';
 
 
-import { Col, Button } from 'antd';
-import items from './GalleryApi';
+import { Col } from 'antd';
+// import items from './GalleryApi';
 import NavMenu from '../nav-menu/NavMenu';
 
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
-
-
-
-
-let options = {
-  //http://photoswipe.com/documentation/options.html
-};
 
 const photos = [
   {

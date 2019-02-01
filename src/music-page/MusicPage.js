@@ -16,16 +16,13 @@ library.add(faApple, faSpotify, faGooglePlay, faSoundcloud);
 class MusicPage extends Component {
 
 
-  constructor(props) {
-    super(props);
-    console.log(props);
-
+  constructor() {
+    super();
     this.state = {
       showComponent: false
     };
     this._onTrackClick = this._onTrackClick.bind(this);
     console.log(this._onTrackClick);
-
     }
 
   _onTrackClick() {
@@ -101,9 +98,8 @@ class MusicPage extends Component {
             </div>
           </Col>
         </div>
-        {this.state.showComponent ?
-          <MusicPlayer playlist={playlist} ref={musicPlayer => (this.musicPlayer = musicPlayer)}/> :
-           null
+        {this.state.showComponent &&
+          <MusicPlayer playlist={playlist} ref={musicPlayer => (this.musicPlayer = musicPlayer)}/>
         }
         <Events/>
       </div>
