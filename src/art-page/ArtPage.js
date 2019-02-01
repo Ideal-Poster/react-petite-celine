@@ -3,59 +3,12 @@ import './ArtPage.css';
 
 
 import { Col } from 'antd';
-// import items from './GalleryApi';
+import photos from './GalleryApi';
 import NavMenu from '../nav-menu/NavMenu';
 
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 
-const photos = [
-  {
-    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-    width: 1,
-    height: 1
-  },
-  {
-    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-    width: 4,
-    height: 3
-  }
-];
 class ArtPage extends Component {
   constructor() {
     super();

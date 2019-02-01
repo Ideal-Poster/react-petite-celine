@@ -19,6 +19,7 @@ const content = (
 );
 
 class ActingPage extends Component {
+  title = "Actress"
   constructor() {
     super();
     this.handleMouseHover = this.handleMouseHover.bind(this);
@@ -42,7 +43,7 @@ class ActingPage extends Component {
       <div id="acting-container">
         <div className="acting-color-underlay"></div>
         <Col sm={{ span: 6, offset: 1 }} xl={{ span: 6, offset: 2 }}>
-          <NavMenu/>
+          <NavMenu title="Actress" />
         </Col>
         <Col md={{ span: 16 }} xl={{ span: 14 }} style={{ paddingTop: '40px', paddingBottom: '40px' }}>
           <Row>

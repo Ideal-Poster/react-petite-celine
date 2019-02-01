@@ -5,7 +5,7 @@
   height: 100vh;
   position: fixed;
 }
-.pswp-thumbnail {
+/* .pswp-thumbnail {
   display: inline-block;
   margin: 10px;
   cursor: pointer;
@@ -14,7 +14,6 @@
 .pswp-thumbnail > img {
   width: 350px;
   height:100%;
-  /* border: 4px solid green; */
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -25,18 +24,24 @@ div.pswp-thumbnails {
   margin-right: auto;
   padding-left: 40px;
   padding-right: 40px;
-}
+} */
 
 .background-color {
-  margin-top: -150px;
-  padding-top: 1500px;
-  z-index: -10000;
-  display: inline-block;
-  position: fixed;
+  /* margin-top: -150px; */
+  /* padding-top: 1500px; */
+  /* z-index: -10; */
+  /* display: absolute; */
+  /* position: fixed; */
+  /* background: #1c1820; */
+  /* min-width: 100vw; */
+  /* min-height: 120vh; */
+  width: 100vw;
+  height: 100vh;
   background: #1c1820;
-  min-width: 100vw;
-  min-height: 120vh;
+  z-index: -10000;
+  position: fixed;
 }
+
 
 
 .etsy-button {
@@ -45,11 +50,11 @@ div.pswp-thumbnails {
   background: purple;
 }
 
-@media (max-width: 831px) {
+/* @media (max-width: 831px) {
   .pswp-thumbnail > img {
     width: 100%;
   }
-}
+} */
 
 /* @media (max-width: 767.98px) {
   .pswp-thumbnail > img {
@@ -57,7 +62,7 @@ div.pswp-thumbnails {
   }
 } */
 
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
   .pswp-thumbnail > img {
     width: 100%;
   }
@@ -68,4 +73,4 @@ div.pswp-thumbnails {
     padding-right: 0px;
   }
 
-}
+} */

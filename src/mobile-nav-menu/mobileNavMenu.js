@@ -29,12 +29,12 @@ class MobileNavMenu extends Component {
 
   render() {
     return(
-      <div className="mobile-nav-menu">
+      <div style={{zIndex: 1000}}>
         <Menu
           className="mobile-nav-menu"
           mode="inline"
           onOpenChange={this.onOpenChange}
-          // style={{  display: 'block' }}
+          style={{ zIndex: 1000 }}
           >
           <SubMenu className="mobile-nav-menu" key="sub1" title={<span><Icon type="appstore" /><span>Petite Celine</span></span>}>
             <Menu.Item className="mobile-nav-menu" key="1">
