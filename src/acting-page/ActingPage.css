@@ -17,3 +17,19 @@
   z-index: -10000;
   position: fixed;
 }
+
+#bio-button {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  transform: translateX(50%);
+  height: 55px;
+  width: 55px;
+  border-radius: 100px;
+  background: #6d3e8e;
+  border: 0px;
+}
+
+#bio-button:hover {
+  background: #714d8b;
+}

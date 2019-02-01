@@ -5,6 +5,18 @@ import NavMenu from '../nav-menu/NavMenu';
 import { Row, Col } from 'antd';
 
 import ImageToggle from './imageToggle/ImageToggle';
+import { Popover, Button } from 'antd';
+
+const content = (
+  <div style={{maxWidth: '60vw'}}>
+    <p>Celine's first love was film. She began her career as an actress at age 6,
+      and became a member of SAG in 2002. Celine's work can be seen in feature films
+      such as, Spielberg’s “Catch Me if You Can” and Eastwood’s “Mystic River”),
+      commercials, and TV, as well as work voice overs and indie films. Celine graduated
+      from Pace University in NYC with a BFA in Acting. She also taught weekly
+      Improvisational Acting classes at The Door High School in Manhattan. </p>
+  </div>
+);
 
 class ActingPage extends Component {
   constructor() {
@@ -35,6 +47,10 @@ class ActingPage extends Component {
         <Col md={{ span: 16 }} xl={{ span: 14 }} style={{ paddingTop: '40px', paddingBottom: '40px' }}>
           <Row>
             <ImageToggle maskedImage={require("../assets/images/celine-1-mask.png")} image={require("../assets/images/celine-1.png")}></ImageToggle>
+
+            <Popover placement="bottomRight" content={content} title="Title">
+              <Button id='bio-button' type="primary">Bio</Button>
+            </Popover>
           </Row>
           <Col span={12}>
             <ImageToggle maskedImage={require("../assets/images/celine-2-mask.png")} image={require("../assets/images/celine-2.png")}></ImageToggle>
