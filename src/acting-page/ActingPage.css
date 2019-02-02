@@ -33,3 +33,19 @@
 #bio-button:hover {
   background: #714d8b;
 }
+
+/* .acting-container {
+  overflow-x: hidden;
+  width: 100vw;
+} */
+
+body {
+  overflow-x: scroll;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    background: #3e788e;
+    overflow-x: hidden;
+  }
+}

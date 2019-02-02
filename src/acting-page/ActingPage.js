@@ -19,13 +19,15 @@ const content = (
 );
 
 class ActingPage extends Component {
-  title = "Actress"
   constructor() {
     super();
     this.handleMouseHover = this.handleMouseHover.bind(this);
     this.state = {
       isHovering: true,
     };
+
+    // console.log(this.props.location.pathname);
+
   }
 
   handleMouseHover() {
@@ -43,13 +45,13 @@ class ActingPage extends Component {
       <div id="acting-container">
         <div className="acting-color-underlay"></div>
         <Col sm={{ span: 6, offset: 1 }} xl={{ span: 6, offset: 2 }}>
-          <NavMenu title="Actress" />
+          <NavMenu title="Actress" pathname={this.props.location.pathname}/>
         </Col>
         <Col md={{ span: 16 }} xl={{ span: 14 }} style={{ paddingTop: '40px', paddingBottom: '40px' }}>
           <Row>
             <ImageToggle maskedImage={require("../assets/images/celine-1-mask.png")} image={require("../assets/images/celine-1.png")}></ImageToggle>
 
-            <Popover placement="bottomRight" content={content} title="Title">
+            <Popover placement="bottomRight" content={content} title="Bio">
               <Button id='bio-button' type="primary">Bio</Button>
             </Popover>
           </Row>

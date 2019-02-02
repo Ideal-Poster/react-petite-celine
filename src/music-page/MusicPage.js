@@ -14,10 +14,8 @@ import playlist from './PlaylistAPI';
 library.add(faApple, faSpotify, faGooglePlay, faSoundcloud);
 
 class MusicPage extends Component {
-
-
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       showComponent: false
     };
@@ -59,7 +57,7 @@ class MusicPage extends Component {
         <div className="music-color-underlay"></div>
         <div className="background">
           <Col sm={{ span: 4, offset: 1 }} xl={{ span: 4, offset: 2 }} id="nav-menu">
-            <NavMenu title="Celine"></NavMenu>
+            <NavMenu title="Celine" pathname={this.props.location.pathname}></NavMenu>
           </Col>
           <Col sm={{ offset: 2, span: 20 }} md={{ offset: 8, span: 10 }} lg={{ offset: 10, span: 8 }} xl={{ offset: 10, span: 6 }}>
             <div className="title-container-1">

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './ArtPage.css';
 
 
-import { Col } from 'antd';
+import { Col, Button } from 'antd';
 import photos from './GalleryApi';
 import NavMenu from '../nav-menu/NavMenu';
 
@@ -10,8 +10,8 @@ import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 
 class ArtPage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { currentImage: 0 };
     this.closeLightbox = this.closeLightbox.bind(this);
     this.openLightbox = this.openLightbox.bind(this);
@@ -43,12 +43,15 @@ class ArtPage extends Component {
   render() {
     return (
       <div>
-      <div className="art-color-underlay"/>
-      <Col sm={{ span: 8, offset: 1 }} xl={{ span: 7, offset: 2 }}>
-          <NavMenu/>
+        <div className="art-color-underlay"/>
+        <Col sm={{ span: 8, offset: 1 }} xl={{ span: 7, offset: 2 }}>
+          <NavMenu title="Art" pathname={this.props.location.pathname}/>
         </Col>
         <Col xs={24} md={{span: 15 }} style={{zIndex: 1000}}>
           <div className='background-color'/>
+          <a href="https://www.etsy.com/shop/GypsyLynx">
+            <Button size={"large"} style={{ marginBottom: '5px', marginTop: '60px', background: '#6d3e8e', border: 'none' }} class="etsy-button" type="primary">Etsy Store</Button>
+          </a>
           <Gallery photos={photos} onClick={this.openLightbox} />
           <Lightbox images={photos}
             onClose={this.closeLightbox}

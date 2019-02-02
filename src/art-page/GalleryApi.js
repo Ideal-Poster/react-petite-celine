@@ -73,21 +73,21 @@ const photos = [
     description: 'Image 12'
   },
   {
-    src: require('../assets/gallery-images/GypsyLynx.jpg'),
-    width: 3,
-    height: 4,
-    description: 'Image 13'
-  },
-  {
     src: require('../assets/gallery-images/Eclipse - Light.png'),
     width: 1,
     height: 1,
-    description: 'Image 14'
+    description: 'Image 13'
   },
   {
     src: require('../assets/gallery-images/Eclipse.png'),
     width: 1,
     height: 1,
+    description: 'Image 14'
+  },
+  {
+    src: require('../assets/gallery-images/GypsyLynx.jpg'),
+    width: 3,
+    height: 4,
     description: 'Image 15'
   },
   {

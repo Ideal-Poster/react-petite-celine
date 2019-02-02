@@ -9,27 +9,37 @@ library.add(faInstagram, faFacebook, faYoutube)
 
 
 class NavMenu extends Component  {
-
+  constructor(props) {
+    super(props)
+    console.log(this.props);
+  }
 
   render() {
     return(
       <div className="nav-container">
         <p id="header">
           Petite<br/>
-          {this.props.title}
+          {/* {this.props.title} */}
         </p>
 
         <ul className="menu-buttons">
           <li className="music">
-            <div className="nav-rectangle"></div>
+
+            { this.props.pathname === "/" &&
+              <div className="nav-rectangle"/>
+            }
             <Link to="/">Music</Link>
           </li>
           <li className="art">
-            <div className="nav-rectangle"></div>
+            { this.props.pathname === "/art" &&
+              <div className="nav-rectangle"/>
+            }
             <Link to="/art">Art</Link>
           </li>
           <li className="acting">
-            <div className="nav-rectangle"></div>
+            { this.props.pathname === "/acting" &&
+              <div className="nav-rectangle"/>
+            }
             <Link to="/acting">Acting</Link>
           </li>
         </ul>
