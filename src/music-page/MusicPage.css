@@ -9,7 +9,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  min-height: 700px;
+  min-height: 712px;
   height: 92vh;
 }
 
@@ -71,4 +71,10 @@
   position: fixed;
   z-index: -10000;
   background: #1c1820;
+}
+
+@media (max-width: 767.98px) {
+  .background {
+    min-height: 900px;
+  }
 }
