@@ -19,25 +19,27 @@ class NavMenu extends Component  {
       <div className="nav-container">
         <p id="header">
           Petite<br/>
-          {/* {this.props.title} */}
+          { this.props.title }
         </p>
 
         <ul className="menu-buttons">
           <li className="music">
-
-            { this.props.pathname === "/" &&
+            {
+              this.props.pathname === "/" &&
               <div className="nav-rectangle"/>
             }
             <Link to="/">Music</Link>
           </li>
           <li className="art">
-            { this.props.pathname === "/art" &&
+            {
+              this.props.pathname === "/art" &&
               <div className="nav-rectangle"/>
             }
             <Link to="/art">Art</Link>
           </li>
           <li className="acting">
-            { this.props.pathname === "/acting" &&
+            {
+              this.props.pathname === "/acting" &&
               <div className="nav-rectangle"/>
             }
             <Link to="/acting">Acting</Link>
