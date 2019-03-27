@@ -9,11 +9,6 @@ library.add(faInstagram, faFacebook, faYoutube)
 
 
 class NavMenu extends Component  {
-  constructor(props) {
-    super(props)
-    console.log(this.props);
-  }
-
   render() {
     return(
       <div className="nav-container">

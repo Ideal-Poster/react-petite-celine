@@ -31,11 +31,11 @@ const Events = () => (
                 </Col>
                 <Col xs={24} sm={{span: 8, offset: 2}}>
                   <div className="vertical-center">
-                    <a href={event.link}>
+                    <a href={"//" + event.link} target="_blank" rel="noopener noreferrer">
                       <Button
                         className="button"
                         size={'large'}>
-                        Primary
+                        {event.buttonText}
                       </Button>
                     </a>
                   </div>

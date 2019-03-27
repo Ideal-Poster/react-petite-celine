@@ -20,7 +20,6 @@ class MusicPage extends Component {
       showComponent: false
     };
     this._onTrackClick = this._onTrackClick.bind(this);
-    console.log(this._onTrackClick);
     }
 
   _onTrackClick() {
@@ -75,7 +74,7 @@ class MusicPage extends Component {
             </div>
             <div className="video-wrapper">
               <iframe title="musicVideo" id="myVideo" className="music-video" src="https://www.youtube.com/embed/pnojhQrQsOE?rel=0&loop=1;showinfo=0?theme=light&color=white"
-                frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen></iframe>
+                frameBorder="0"  allow="encrypted-media" allowFullScreen></iframe>
             </div>
             <div style={{width:'330px'}}>
               <p className="purchase">Purchase Here</p>

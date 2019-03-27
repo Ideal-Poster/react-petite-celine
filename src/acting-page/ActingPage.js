@@ -25,9 +25,6 @@ class ActingPage extends Component {
     this.state = {
       isHovering: true,
     };
-
-    // console.log(this.props.location.pathname);
-
   }
 
   handleMouseHover() {
