@@ -28,7 +28,9 @@ class NavMenu extends Component  {
               this.props.pathname === "/" &&
               <div className="nav-rectangle"/>
             }
-            <Link to="/">Music</Link>
+            <Link to="/" style={{
+              // fontFamily: 'Greycliff-Regular'
+            }}>Music</Link>
           </li>
           <li className="art">
             {
@@ -66,7 +68,6 @@ class NavMenu extends Component  {
       </div>
     );
   }
-  // <Col offset={1} span={7} id="nav-menu">
 
 };
 

@@ -1,3 +1,16 @@
+.date > p, .venue > p, .location > p {
+  font-family: 'Greycliff-Regular';
+  letter-spacing: -0.5px;
+}
+
+.date > p, .location > p {
+  font-size: 18px;
+}
+
+.venue > p {
+  font-size: 40px
+}
+
 .events-section {
   padding: 60px 0px 0px 0px;
   border: 10px solid white;
@@ -5,7 +18,10 @@
   min-height: 100vh;
   color: #e0dce0;
   line-height: 24px;
+  /* font-family: 'Greycliff-Regular' */
+
 }
+
 
 .events-banner {
   writing-mode: vertical-rl;
@@ -13,6 +29,7 @@
   font-size: 47px;
   height: 100px;
   color: #e0dce0;
+  font-family: 'Greycliff-Medium';
 }
 
 .location {

@@ -5,6 +5,10 @@
 @media(min-width: 767.5px){
   .mobile-nav-menu {
     display: none;
-
   }
+}
+
+
+.nav-option:hover {
+  color: white !important;
 }

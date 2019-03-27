@@ -36,15 +36,15 @@ class MobileNavMenu extends Component {
           onOpenChange={this.onOpenChange}
           style={{ zIndex: 1000 }}
           >
-          <SubMenu className="mobile-nav-menu" key="sub1" title={<span><Icon type="appstore" /><span>Petite Celine</span></span>}>
+          <SubMenu className="mobile-nav-menu-sub" key="sub1" title={<span><Icon type="appstore" /><span>Petite Celine</span></span>}>
             <Menu.Item className="mobile-nav-menu" key="1">
-              <Link to="/">Music</Link>
+              <Link to="/" className='nav-option' style={{ color: 'dimgrey' }}>Music</Link>
             </Menu.Item>
             <Menu.Item className="mobile-nav-menu" key="2">
-              <Link to="/art">Art</Link>
+              <Link to="/art" className='nav-option' style={{ color: 'dimgrey' }}>Art</Link>
             </Menu.Item>
             <Menu.Item className="mobile-nav-menu" key="3">
-              <Link to="/acting">Acting</Link>
+              <Link to="/acting"  className='nav-option' style={{ color: 'dimgrey' }}>Acting</Link>
             </Menu.Item>
           </SubMenu>
         </Menu>

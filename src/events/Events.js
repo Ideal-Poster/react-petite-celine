@@ -13,7 +13,7 @@ const Events = () => (
 
         <Col xs={{ span: 24 }} sm={{ span: 22, offset: 2 }} md={{span:18, offset:0}}>
           <Row style={{ display: 'flex', paddingBottom: '40px' }}>
-            <Col xs={24} sm={16}>
+            <Col xs={24} sm={14}>
               <div className="event event01">
                 <div className="date">
                   <p>Sat, January 19th 2019 - 10pm</p>
@@ -26,7 +26,7 @@ const Events = () => (
                 </div>
               </div>
             </Col>
-            <Col xs={24} sm={8}>
+            <Col xs={24} sm={{span: 8, offset: 2}}>
               <div className="vertical-center">
                 <a href="">
                   <Button

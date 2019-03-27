@@ -4,3 +4,8 @@
   color: #e0dce0;
 
 }
+
+.footer > p {
+  font-family: 'Greycliff-Medium';
+  letter-spacing: -0.5px;
+}
