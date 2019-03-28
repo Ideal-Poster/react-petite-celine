@@ -22,6 +22,14 @@ const playlist = [
   {
     url: 'https://res.cloudinary.com/petite-celine/video/upload/v1553735418/music/Quicksand.mp3',
     title: 'Quicksand'
+  },
+  {
+    url: 'https://res.cloudinary.com/petite-celine/video/upload/v1553735417/music/The_Fall.mp3',
+    title: 'The Fall'
+  },
+  {
+    url: 'https://res.cloudinary.com/petite-celine/video/upload/v1553735420/music/Young_Soldier.mp3',
+    title: 'Young Soldier'
   }
 ]
 export default playlist;
