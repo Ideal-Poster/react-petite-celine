@@ -1,6 +1,6 @@
 export const events = [
   {
-    date: 'Sat, April 20th - 8pm',
+    date: 'Saturday April 20th 2019 - 8pm',
     venue: 'Pianos',
     location: '158 Ludlow St, New York, NY 10002',
     link: null,
@@ -8,7 +8,7 @@ export const events = [
     clickable: false
   },
   {
-    date: 'Fri, June 14th - 9:30pm',
+    date: 'Friday June 14th 2019 - 9:30pm',
     venue: 'The Well',
     location: '272 Meserole St Brooklyn, NY 11206',
     link: null,

@@ -38,13 +38,12 @@ class NavMenu extends Component  {
   render() {
     return(
       <div className="nav-container">
-      <div id="header">
-        <p id="static">Petite</p>
-        <p id= "intro" ref={this.DOM.title}>
-          { this.props.title }
-        </p>
-
-      </div>
+        <div id="header">
+          <p id="static">Petite</p>
+          <p id= "intro" ref={this.DOM.title}>
+            { this.props.title }
+          </p>
+        </div>
 
         <ul className="menu-buttons">
           <li className="music">

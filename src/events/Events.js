@@ -30,7 +30,10 @@ const Events = () => (
                   </div>
                 </Col>
                 <Col xs={24} sm={{span: 8, offset: 2}}>
-                  <div className="vertical-center">
+
+                <div className="vertical-center">
+                {
+                  event.clickable === true ?
                     <a href={"//" + event.link} target="_blank" rel="noopener noreferrer">
                       <Button
                         className="button"
@@ -38,6 +41,13 @@ const Events = () => (
                         {event.buttonText}
                       </Button>
                     </a>
+                    :
+                    <Button
+                      className="button"
+                      size={'large'}>
+                      {event.buttonText}
+                    </Button>
+                }
                   </div>
                 </Col>
               </Row>
