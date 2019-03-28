@@ -1,23 +1,27 @@
 const playlist = [
   {
-    url: 'http://res.cloudinary.com/alick/video/upload/v1502689683/Luis_Fonsi_-_Despacito_ft._Daddy_Yankee_uyvqw9.mp3',
-    title: 'Despacito'
+    url: 'https://res.cloudinary.com/petite-celine/video/upload/v1553735417/music/Words.mp3',
+    title: 'Words'
   },
   {
-    url: 'http://res.cloudinary.com/alick/video/upload/v1502375674/Bedtime_Stories.mp3',
-    title: 'Bedtime Stories'
+    url: 'https://res.cloudinary.com/petite-celine/video/upload/v1553735413/music/One_More_Shot.mp3',
+    title: 'One More Shot'
   },
   {
-    url: 'http://res.cloudinary.com/alick/video/upload/v1502444212/Actor_ud8ccw.mp3',
-    title: '演员'
+    url: 'https://res.cloudinary.com/petite-celine/video/upload/v1553735420/music/Reason_Rhyme.mp3',
+    title: 'Reason & Rhyme'
   },
   {
-    url: 'http://res.cloudinary.com/alick/video/upload/v1502444215/Bridge_of_Fate_aaksg1.mp3',
-    title: 'Bridge of Fate'
+    url: 'https://res.cloudinary.com/petite-celine/video/upload/v1553735412/music/Demain.mp3',
+    title: 'Demain'
   },
   {
-    url: 'http://res.cloudinary.com/alick/video/upload/v1502444222/Goodbye_byaom5.mp3',
-    title: 'Goodbye'
+    url: 'https://res.cloudinary.com/petite-celine/video/upload/v1553735418/music/After_All.mp3',
+    title: 'After All'
+  },
+  {
+    url: 'https://res.cloudinary.com/petite-celine/video/upload/v1553735418/music/Quicksand.mp3',
+    title: 'Quicksand'
   }
 ]
 export default playlist;
