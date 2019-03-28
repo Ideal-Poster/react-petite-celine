@@ -12,7 +12,8 @@ export const events = [
     venue: 'The Well',
     location: '272 Meserole St Brooklyn, NY 11206',
     link: null,
-    buttonText: '$10 cover'
+    buttonText: '$10 cover',
+    clickable: false
   },
 ];
 
