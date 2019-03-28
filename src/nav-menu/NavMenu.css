@@ -71,6 +71,7 @@ ul.menu-buttons > li > *:hover {
 #header > * {
   font-size: 113px;
   font-family: 'Cardo', serif;
+  z-index: 1000;
 }
 
 #header, .album-title, .video-title {

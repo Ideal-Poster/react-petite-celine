@@ -8,7 +8,7 @@ const Events = () => (
   <div style={{border: "10px solid #1C1820"}}>
     <div className="events-section">
       <Row>
-        <Col sm={{ offset: 2 }} md={{ offset:0,  span: 6 }}>
+        <Col sm={{ offset: 2 }} md={{ offset: 1,  span: 5 }}>
           <h3 className="events-banner">EVENTS</h3>
         </Col>
 

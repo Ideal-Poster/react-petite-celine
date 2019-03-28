@@ -44,10 +44,10 @@ class ArtPage extends Component {
     return (
       <div>
         <div className="art-color-underlay"/>
-        <Col sm={{ span: 8, offset: 1 }} xl={{ span: 7, offset: 2 }}>
+        <Col sm={{ span: 8, offset: 2 }} xl={{ span: 7, offset: 2 }}>
           <NavMenu title="Art" pathname={this.props.location.pathname}/>
         </Col>
-        <Col xs={24} md={{span: 15 }} style={{zIndex: 1000}}>
+        <Col xs={24} md={{span: 14 }} style={{zIndex: 1000, marginTop:'-2px'}}>
           <div className='background-color'/>
           <a href="https://www.etsy.com/shop/GypsyLynx">
             <Button size={"large"} style={{ marginBottom: '5px', marginTop: '60px', background: '#6d3e8e', border: 'none' }} class="etsy-button" type="primary">Etsy Store</Button>

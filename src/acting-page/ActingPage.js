@@ -41,7 +41,7 @@ class ActingPage extends Component {
     return(
       <div id="acting-container">
         <div className="acting-color-underlay"></div>
-        <Col sm={{ span: 6, offset: 1 }} xl={{ span: 6, offset: 2 }}>
+        <Col sm={{ span: 4, offset: 1 }} md={{ span: 4, offset: 2 }}>
           <NavMenu title="Actress" pathname={this.props.location.pathname}/>
         </Col>
         <Col md={{ span: 16 }} xl={{ span: 14 }} style={{ paddingTop: '40px', paddingBottom: '40px' }}>

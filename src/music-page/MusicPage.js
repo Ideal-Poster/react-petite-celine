@@ -55,10 +55,10 @@ class MusicPage extends Component {
       <div className="music-page-container">
         <div className="music-color-underlay"></div>
         <div className="background">
-          <Col sm={{ span: 4, offset: 1 }} xl={{ span: 4, offset: 2 }} id="nav-menu">
+          <Col sm={{ span: 4, offset: 1 }} md={{ span: 4, offset: 2 }} id="nav-menu">
             <NavMenu title="Celine" pathname={this.props.location.pathname}></NavMenu>
           </Col>
-          <Col sm={{ offset: 2, span: 20 }} md={{ offset: 8, span: 10 }} lg={{ offset: 10, span: 8 }} xl={{ offset: 10, span: 6 }}>
+          <Col sm={{ offset: 2, span: 20 }} md={{ offset: 8, span: 8 }} xl={{ offset: 10, span: 6 }}>
             <div className="title-container-1">
               <div className="rectangle"/>
               <h2 className="album-title">Young Soldier</h2>

@@ -26,7 +26,7 @@ class NavMenu extends Component  {
       {
       ease: Power4.easeInOut,
       opacity: 0,
-      top: -90
+      top: -140
       },
       {
         opacity: 1,
