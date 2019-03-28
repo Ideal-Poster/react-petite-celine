@@ -9,7 +9,7 @@ import NavMenu from '../nav-menu/NavMenu';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faSpotify, faGooglePlay, faSoundcloud } from '@fortawesome/free-brands-svg-icons';
-import playlist from './PlaylistAPI';
+import { playlist } from '../api';
 
 library.add(faApple, faSpotify, faGooglePlay, faSoundcloud);
 

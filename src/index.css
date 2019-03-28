@@ -8,11 +8,6 @@
   src: url('assets/fonts/GreycliffCF-Regular.ttf');
 }
 
-@font-face {
-  font-family: Regattia;
-  src: url('assets/fonts/Regattia-Bold.otf');
-}
-
 body {
   margin: 0;
   padding: 0;
