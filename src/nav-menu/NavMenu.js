@@ -4,18 +4,47 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {  TweenMax, Power4 } from 'gsap';
 
 library.add(faInstagram, faFacebook, faYoutube)
 
-
 class NavMenu extends Component  {
+  constructor() {
+    super();
+    this.DOM = {
+      title: React.createRef()
+    }
+  }
+
+  componentDidMount() {
+    console.log(this.DOM.title);
+    this.titleIntro();
+  }
+
+  titleIntro() {
+    TweenMax.fromTo(this.DOM.title.current, 1,
+      {
+      ease: Power4.easeInOut,
+      opacity: 0,
+      top: -90
+      },
+      {
+        opacity: 1,
+        top:-110
+      }
+    )
+  }
+
   render() {
     return(
       <div className="nav-container">
-        <p id="header">
-          Petite<br/>
+      <div id="header">
+        <p id="static">Petite</p>
+        <p id= "intro" ref={this.DOM.title}>
           { this.props.title }
         </p>
+
+      </div>
 
         <ul className="menu-buttons">
           <li className="music">
@@ -23,9 +52,7 @@ class NavMenu extends Component  {
               this.props.pathname === "/" &&
               <div className="nav-rectangle"/>
             }
-            <Link to="/" style={{
-              // fontFamily: 'Greycliff-Regular'
-            }}>Music</Link>
+            <Link to="/">Music</Link>
           </li>
           <li className="art">
             {

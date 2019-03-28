@@ -55,11 +55,22 @@ ul.menu-buttons > li > *:hover {
 
 #header {
   margin-top: 23.75vh;
-  font-family: 'Cardo', serif;
-  font-size: 113px;
   line-height: 0.659;
   letter-spacing: -1px;
   position: relative;
+  /* background: darkorange; */
+  height: 205px;
+}
+
+#header > #intro {
+  position: relative;
+  top: -110px;
+  /* opacity: 0; */
+}
+
+#header > * {
+  font-size: 113px;
+  font-family: 'Cardo', serif;
 }
 
 #header, .album-title, .video-title {
