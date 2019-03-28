@@ -2,7 +2,7 @@
   text-align:  center;
   z-index: 4000;
   color: #e0dce0;
-
+  z-index: 90000;
 }
 
 .footer > p {
