@@ -69,7 +69,7 @@ class NavMenu extends Component  {
           </li>
         </ul>
 
-        <div style={{ width: '120px' }}>
+        <div style={{ width: '125px' }}>
           <a href="https://www.instagram.com/petite_celine/" rel="noopener noreferrer" target="_blank">
             <FontAwesomeIcon className="instagram" icon={ faInstagram } />
           </a>
@@ -77,7 +77,7 @@ class NavMenu extends Component  {
           <a href="https://www.facebook.com/cdutertre.nyc" rel="noopener noreferrer" target="_blank">
             <FontAwesomeIcon className="facebook" icon={ faFacebook}/>
           </a>
-
+          
           <a href="https://www.youtube.com/user/celineNYCmusic" rel="noopener noreferrer" target="_blank">
             <FontAwesomeIcon className="youtube" icon={ faYoutube } />
           </a>
